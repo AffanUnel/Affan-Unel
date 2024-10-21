@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="girilenciftsayilarinmiktari0gelenekadar"/>
+        <attribute name="authors" value="Affan &#220;NEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 02:19:01 &#214;S"/>
+        <attribute name="created" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDI6MDU6MzIgw5ZTOzM0NDM="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDI6MTY6MDkgw5ZTOzQ7QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDE6MDI6NDggw5ZTO2dpcmlsZW50ZWtzYXlpbGFyaW5vcnRhbGFtYXNpMGdlbGVuZWthZGFyLmZwcmc7MTE4OTk="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDI6MTk6MDEgw5ZTOzE7MzU1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="miktar, sayi" type="Integer" array="False" size=""/>
+            <declare name="kalan" type="Real" array="False" size=""/>
+            <assign variable="miktar" expression="0"/>
+            <output expression="&quot;L&#252;tfen Say&#305; Giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="kalan" expression="sayi%2"/>
+            <if expression="sayi=0">
+                <then>
+                    <output expression="&quot;Hi&#231; &#231;ift say&#305; girilmedi&quot;" newline="True"/>
+                    <breakpoint expression="miktar=0" always="True"/>
+                </then>
+                <else>
+                    <if expression="kalan=0">
+                        <then>
+                            <assign variable="miktar" expression="miktar+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <while expression="sayi!=0">
+                <output expression="&quot;Bir daha giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <assign variable="kalan" expression="sayi%2"/>
+                <if expression="sayi=0">
+                    <then/>
+                    <else>
+                        <if expression="kalan=0">
+                            <then>
+                                <assign variable="miktar" expression="miktar+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="miktar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

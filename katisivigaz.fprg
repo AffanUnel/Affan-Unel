@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="katisivigaz"/>
+        <attribute name="authors" value="Affan &#220;NEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 09:11:00 &#214;S"/>
+        <attribute name="created" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDk6MDA6NTcgw5ZTOzM0NTI="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDk6MTE6MDAgw5ZTOzE7MzU1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="100 derecede gaz 0 derecede kat&#305; oldu&#287;unu varsayarsak"/>
+            <declare name="kat&#305;, s&#305;v&#305;, gaz, derece" type="Real" array="False" size=""/>
+            <output expression="&quot;Dereceyi giriniz (C&#176;)&quot;" newline="True"/>
+            <input variable="derece"/>
+            <if expression="derece&lt;=0">
+                <then>
+                    <output expression="&quot;Kat&#305; halindedir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="derece&gt;=100">
+                        <then>
+                            <output expression="&quot;Gaz halindedir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;S&#305;v&#305; halindedir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

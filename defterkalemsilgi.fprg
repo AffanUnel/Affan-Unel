@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="defterkalemsilgi"/>
+        <attribute name="authors" value="Affan &#220;NEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 09:00:42 &#214;S"/>
+        <attribute name="created" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDg6MTI6MjEgw5ZTOzM0NDU="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDk6MDA6NDIgw5ZTOzE7MzU1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kalem, silgi, defter, tutar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Merhaba efendim ho&#351;geldiniz!&quot;" newline="True"/>
+            <output expression="&quot;&#220;r&#252;nlerimizin fiyatlar&#305; a&#351;agidaki gibidir&quot;" newline="True"/>
+            <output expression="&quot;Kalem  20 TL&quot;" newline="True"/>
+            <output expression="&quot;Silgi  15 TL&quot;" newline="True"/>
+            <output expression="&quot;Defter 40 TL&quot;" newline="True"/>
+            <output expression="&quot;Ka&#231; kalem almak isterdiniz?&quot;" newline="True"/>
+            <input variable="kalem"/>
+            <output expression="&quot;Ka&#231; silgi almak isterdiniz?&quot;" newline="True"/>
+            <input variable="silgi"/>
+            <output expression="&quot;Ka&#231; defter almak isterdiniz?&quot;" newline="True"/>
+            <input variable="defter"/>
+            <assign variable="tutar" expression="kalem*20+silgi*15+defter*40"/>
+            <output expression="&quot;&#214;denecek tutar;&quot;" newline="True"/>
+            <output expression="tutar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

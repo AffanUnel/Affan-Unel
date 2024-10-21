@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vizefinal"/>
+        <attribute name="authors" value="Affan &#220;NEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 08:11:24 &#214;S"/>
+        <attribute name="created" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDg6MDE6MzMgw5ZTOzM0NDY="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDg6MTE6MjQgw5ZTOzE7MzU1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize, final, ortalama" type="Real" array="False" size=""/>
+            <output expression="&quot;Vize notunu giriniz&quot;" newline="True"/>
+            <input variable="vize"/>
+            <output expression="&quot;Final notunu giriniz&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="vize*40/100+final*60/100"/>
+            <if expression="ortalama&gt;=60">
+                <then>
+                    <output expression="&quot;Tebrikler ge&#231;tiniz!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#220;zg&#252;n&#252;m kalm&#305;&#351;s&#305;n&#305;z :(&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

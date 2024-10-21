@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mesajyazdirma"/>
+        <attribute name="authors" value="Affan &#220;NEL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 09:20:03 &#214;S"/>
+        <attribute name="created" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDk6MTE6MDcgw5ZTOzM0NDk="/>
+        <attribute name="edited" value="QWZmYW4gw5xORUw7REVTS1RPUC1IREZLR05DOzIwMjQtMTAtMjE7MDk6MjA6MDMgw5ZTOzE7MzU1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="defa, miktar" type="Integer" array="False" size=""/>
+            <declare name="mesaj" type="String" array="False" size=""/>
+            <output expression="&quot;Mesaj&#305;n&#305;z&#305; giriniz&quot;" newline="True"/>
+            <input variable="mesaj"/>
+            <output expression="&quot;Ka&#231; defa yaz&#305;lmas&#305;n&#305; istersiniz&quot;" newline="True"/>
+            <input variable="defa"/>
+            <if expression="defa&lt;=0">
+                <then>
+                    <output expression="&quot;Ge&#231;ersiz say&#305; iste&#287;i&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="miktar" start="0" end="defa-1" direction="inc" step="1">
+                        <output expression="mesaj" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
